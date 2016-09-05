@@ -1,8 +1,6 @@
-# AdMob Mediation Android
-
 This SDK is designed for integrating Adcash with AdMob Mediation on Android to maximize fill rate and revenue.  
 
-It’s a simple 2-step integration process.
+It's a simple 2-step integration process.
 
 ## Integration Guide
 
@@ -10,10 +8,10 @@ It’s a simple 2-step integration process.
 
 **Prerequisite:** Android Studio 1.0 or higher 
 
-### Configure Adcash SDK
-#### Download SDK
+### 1. Configure Adcash SDK
+#### 1.1. Download SDK
   Download the Adcash SDK [here](http://developer.adca.sh/wp-content/uploads/2016/09/admob-adapter.zip).
-#### Update build.gradle
+#### 1.2. Update build.gradle
 Add Adcash SDK into project by putting it in **'libs'** module.  If you don't have 'libs' folder in your project module then create one (Example: ... MyNewProject/app/libs/)
 
 Open the build.gradle of your app and add the following code lines:
@@ -35,7 +33,7 @@ dependencies {
 }
 ```
 ![alt tag](http://developer.adca.sh/wp-content/uploads/2016/09/gradle_sync.png)
-#### Update AndroidManifest.xml
+#### 1.3. Update AndroidManifest.xml
 ```xml
 
     <!-- Include required permissions for Adcash SDK to run -->
@@ -54,16 +52,16 @@ dependencies {
             
    <application>
 ```
-### Configure Adcash Custom Event on AdMob Mediation Portal
+### 2. Configure Adcash Custom Event on AdMob Mediation Portal
 
-##### ?	Select App & Add New Network
+##### 2.1. Select App & Add New Network
 On AdMob Mediation Portal, click on **Monetize tab** then select one of your app from left panel that you want to monetize. 
 
 On Application page, select one of your **ad unit** (Adcash AdMob Android Adaptor currently supports Banner and Interstitial ad format) and click on **Mediation** for adding new ad network.
 ![alt tag](http://developer.adca.sh/wp-content/uploads/2016/08/ScreenShot2.png)
 On Mediation page, click on **new ad network** and it open new window for configuring it.
 ![alt tag](http://developer.adca.sh/wp-content/uploads/2016/08/ScreenShot3.png)
-##### ?	Add Adcash Custom Ad Network
+##### 2.2. Add Adcash Custom Ad Network
 Click on **Custom Event** and it will open window for filling out information. 
 ![alt tag](http://developer.adca.sh/wp-content/uploads/2016/08/ScreenShot4.png)
 Custom Event Information from:  
