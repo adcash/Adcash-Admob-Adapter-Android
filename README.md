@@ -1,3 +1,5 @@
+# Adcash AdMob Adapter
+
 This SDK is designed for integrating Adcash with AdMob Mediation on Android to maximize fill rate and revenue.  
 
 It's a simple 2-step integration process.
